@@ -8,8 +8,8 @@ const AppNavigator = () => {
   return (
     <NavigationContainer>
       <DrawerNavigation />
-      <StackNavigation />
-      <BottomTabNavigation />
+      {/* <StackNavigation />
+      <BottomTabNavigation /> */}
     </NavigationContainer>
   );
 };
