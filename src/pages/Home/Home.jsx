@@ -1,12 +1,15 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from 'react-native';
+import React from 'react';
+import { Button } from 'react-native-paper';
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
-    <View>
-      <Text>Home</Text>
+    <View style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <Button mode='contained' onPress={() => {
+        navigation.openDrawer();
+      }}>Open Drawer</Button>
     </View>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
