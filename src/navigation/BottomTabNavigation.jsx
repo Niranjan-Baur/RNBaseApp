@@ -12,7 +12,7 @@ const Tab = createBottomTabNavigator();
 const BottomTabNavigation = ({ navigation }) => {
   console.log('Bottom Tab Navigation')
   return (
-    <Tab.Navigator initialRouteName='Home' screenOptions={{
+    <Tab.Navigator screenOptions={{
       headerLeft: () =>
         <TouchableOpacity style={{ marginLeft: 15 }} onPress={() => {
           navigation.openDrawer();

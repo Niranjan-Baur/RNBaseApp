@@ -10,11 +10,11 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigation = () => {
   console.log('DrawerNavigation')
   return (
-    <Drawer.Navigator initialRouteName="Home" screenOptions={{
+    <Drawer.Navigator initialRouteName="Tabs" screenOptions={{
       headerShown:false,
       drawerType:'slide'
       }}>
-      <Drawer.Screen name="Home" component={BottomTabNavigation} />
+      <Drawer.Screen name="Tabs" component={BottomTabNavigation} />
       <Drawer.Screen name="Profile" component={Profile} />
     </Drawer.Navigator>
   )
